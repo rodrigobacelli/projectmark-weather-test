@@ -8,7 +8,11 @@ import {
   FaCloudSunRain,
   FaCloudMoon,
   FaCloudSun,
+  FaDroplet,
+  FaMountainSun,
 } from 'react-icons/fa6';
+
+import { RiCelsiusFill } from 'react-icons/ri';
 
 import { Text } from '../Text';
 import { Card } from '../Card';
@@ -95,15 +99,38 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
         {`${weather.name}, ${weather.sys.country}`}
       </Text>
       <article className="flex items-center justify-between gap-1">
-        <Text className="text-7xl">{Math.round(weather.main.temp)}&#176;</Text>
-        <Text as="div">
+        <Text
+          className={twMerge(
+            'text-7xl flex justify-start gap-1',
+            weather.main.temp <= 5 && 'text-blue-900 dark:text-blue-500',
+            weather.main.temp > 5 &&
+              weather.main.temp <= 25 &&
+              'text-orange-900 dark:text-orange-600',
+            weather.main.temp > 25 && 'text-red-900 dark:text-red-500'
+          )}
+        >
+          {Math.round(weather.main.temp)}
+          <RiCelsiusFill className="w-8 h-8 mt-2" />
+        </Text>
+        <Text as="div" className="flex flex-col gap-1">
           {WeatherIcon} {weather.weather[0].main}
         </Text>
       </article>
-      <p>Humidity: {weather.main.humidity}%</p>
-      <p>
-        Pressure: {weather.main.pressure} <abbr title="hectoPascals">hPa</abbr>
-      </p>
+      <footer className="flex flex gap-4 items-center justify-start">
+        <Text className="flex gap-2 items-center">
+          <FaDroplet className="w-4 h-4" title="Humidity" />
+          {weather.main.humidity}%
+        </Text>
+        <div className="flex gap-2 items-center">
+          <FaMountainSun
+            className="w-4 h-4 text-black dark:text-gray-100"
+            title="Atmospheric Pressure"
+          />
+          <Text>
+            {weather.main.pressure} <abbr title="hectoPascals">hPa</abbr>
+          </Text>
+        </div>
+      </footer>
     </Card>
   );
 };
