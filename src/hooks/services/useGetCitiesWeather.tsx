@@ -9,6 +9,7 @@ export const useGetCitiesWeather = () => {
       return {
         queryKey: ['city weather', city.name, city.state, city.country],
         queryFn: () => getWeather(city),
+        refetchInterval: 10 * 60 * 1000,
       };
     }),
     combine: (results) => {
@@ -16,6 +17,18 @@ export const useGetCitiesWeather = () => {
         data: results.map((result) => result.data),
         isFetching: results.some((result) => result.isFetching),
         isLoading: results.some((result) => result.isLoading),
+        dataUpdatedAt: results.reduce(
+          (prevValue, currentValue) =>
+            prevValue >= currentValue.dataUpdatedAt
+              ? prevValue
+              : currentValue.dataUpdatedAt,
+          0
+        ),
+        refetch: () => {
+          results.forEach((result) => {
+            result.refetch();
+          });
+        },
       };
     },
   });

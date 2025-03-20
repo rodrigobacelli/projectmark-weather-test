@@ -1,11 +1,11 @@
 import * as React from 'react';
 
+import { format } from 'date-fns/format';
+
 import { useGetCitiesWeather } from './hooks/services/useGetCitiesWeather';
 
 export const App = () => {
   const queries = useGetCitiesWeather();
-
-  console.log(queries);
 
   if (queries.isLoading) {
     return <div>Loading...</div>;
@@ -22,7 +22,19 @@ export const App = () => {
   return (
     <>
       <h1>Weather App</h1>
-
+      <h2>
+        Last updated at:{' '}
+        <span suppressHydrationWarning>
+          {format(new Date(queries.dataUpdatedAt), 'MM/dd/yyyy')}
+        </span>
+      </h2>
+      <br />
+      <br />
+      <br />
+      <button onClick={() => queries.refetch()}>Refetch</button>
+      <br />
+      <br />
+      <br />
       <ul>
         {queries.data.map((item) => {
           if (!item) {
