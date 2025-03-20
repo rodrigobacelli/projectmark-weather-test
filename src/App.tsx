@@ -46,7 +46,7 @@ export const App = () => {
               <li>
                 <p>Temprature: {Math.round(item.main.temp)}&#176;</p>
                 <p>Humidity: {item.main.humidity}%</p>
-                <p>Pressure: {item.main.pressure}hPa</p>
+                <p>Pressure: {item.main.pressure} hPa</p>
               </li>
               <hr />
             </React.Fragment>
