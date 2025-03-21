@@ -25,17 +25,23 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   );
 
   const handleThemeChange = (theme?: Themes) => {
-    localStorage.theme = theme;
-
     if (theme === 'dark') {
+      localStorage.setItem('theme', 'dark');
       document.documentElement.classList.remove('light');
       document.documentElement.classList.add('dark');
     } else if (theme === 'light') {
+      localStorage.setItem('theme', 'light');
       document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
     } else {
+      localStorage.removeItem('theme');
       document.documentElement.classList.remove('light');
-      document.documentElement.classList.remove('dark');
+
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     }
 
     setTheme(theme);
