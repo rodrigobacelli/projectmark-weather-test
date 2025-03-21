@@ -17,7 +17,12 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState<Themes | undefined>();
+  const [theme, setTheme] = useState<Themes | undefined>(
+    localStorage.theme ||
+      (!localStorage.theme &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches &&
+        'dark')
+  );
 
   const handleThemeChange = (theme?: Themes) => {
     setTheme(theme);
