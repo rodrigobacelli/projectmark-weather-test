@@ -50,7 +50,9 @@ export const Dropdown = ({
           {selectedOptionObject?.icon ? (
             <selectedOptionObject.icon className="w-4 h-4" />
           ) : null}
-          {selectedOptionObject?.label}
+          <span className="hidden sm:inline-flex">
+            {selectedOptionObject?.label}
+          </span>
           {isOpen ? (
             <FaChevronUp className="ml-2 w-3 h-3" />
           ) : (
