@@ -1,54 +1,114 @@
-# React + TypeScript + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Weather App Print Screen](https://github.com/rodrigobacelli/[projectmark-weather-test]/blob/[main]/image.jpg?raw=true)
 
-Currently, two official plugins are available:
+This is a Weather Application for the ProjectMark Front-End Test, that show the Weather for Joinville, San Francisco and Urubici
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Display the Weather for Joinville/SC (Brazil)
+- Display the Weather for San Francisco/CA (USA)
+- Display the Weather for Urubici/SC (Brazil)
+- Display Humidity and Pressure for each city
+- Dark and Light Theme
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## Requirements
+
+In order to run this project you need to make sure you have Node 22+ and NPM 9+ installed.
+
+[Get Latest Node Version](https://nodejs.org/en/download)
+
+
+## Environment Variables
+
+To run this project you need to add the following variable in you .env file:
+
+```
+# Variable setting the refetch time in minutes of the API
+VITE_WEATHER_REFETCH_TIME_IN_MINUTES=10
+
+# Variable setting the OpenWeather API Key
+VITE_OPEN_WEATHER_APP_KEY=<your-key-here>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+In the project root folder there's a `.env.template` file with default .env vars as examples.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## Installation
+
+To install the project you first need to clone, acess the project root folder and run the following command:
+
+Clone the repository:
+```bash
+  git clone https://github.com/rodrigobacelli/projectmark-weather-test.git
 ```
+Access the project root folder:
+```bash
+  cd projectmark-weather-test
+```
+
+Install project dependencies:
+```bash
+  npm install my-project
+```
+
+
+## Running Locally
+
+With the repo cloned and installed, access the project root folder:
+```bash
+  cd projectmark-weather-test
+```
+
+Start the server:
+```bash
+  npm run dev
+```
+
+After the server start to run, you can access the application in your browser by accessing `http://localhost:<configured-port>`. By default, Vite runs the dev server in (http://localhost:5173/)[http://localhost:5173/], but you can customize the door by setting the flag in the start command:
+```bash
+  npm run dev -- --port=<port-number>
+```
+
+## Available commands
+
+In the project directory, you can run:
+
+```bash
+  npm run dev
+```
+Runs the app in the development mode.
+
+```bash
+  npm run build
+```
+Builds the app for production to the build folder.
+
+```bash
+  npm run lint
+```
+Runs lint to check if the code is following the code styling rules 
+
+## Need Help?
+
+If you need help, open a new issue in the repo and one of our maintainers member will help you.
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+## Roadmap
+
+- Deploy the Application to GitHub Pages
+- Create pages to detail each city weather, including forecast and more specific data
+- Add End-to-End tests
+- Analyze the necessity of Next.js usage
+
+
+## Authors
+
+- [@rodrigobacelli](https://www.github.com/rodrigobacelli)
