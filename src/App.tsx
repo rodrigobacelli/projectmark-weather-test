@@ -1,10 +1,11 @@
 import { Weather } from './pages/Weather';
+import { Layout } from './components/Layout';
 
 export const App = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center bg-white dark:bg-gray-900">
+    <Layout>
       <h1>Weather App</h1>
       <Weather />
-    </div>
+    </Layout>
   );
 };

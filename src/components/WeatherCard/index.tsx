@@ -9,10 +9,17 @@ import {
   FaCloudMoon,
   FaCloudSun,
   FaDroplet,
-  FaMountainSun,
+  FaTornado,
+  FaVolcano,
 } from 'react-icons/fa6';
 
-import { RiCelsiusFill } from 'react-icons/ri';
+import {
+  RiCelsiusFill,
+  RiDashboard3Line,
+  RiMistFill,
+  RiMoonFoggyFill,
+  RiSunFoggyFill,
+} from 'react-icons/ri';
 
 import { Text } from '../Text';
 import { Card } from '../Card';
@@ -20,6 +27,11 @@ import { Card } from '../Card';
 import type { IconType } from 'react-icons';
 import type { Weather } from '../../types/weather.ts';
 import { twMerge } from 'tailwind-merge';
+import { WiDust, WiSandstorm, WiSmoke } from 'react-icons/wi';
+import { IoThunderstorm } from 'react-icons/io5';
+import { MdThunderstorm } from 'react-icons/md';
+import { CiCloudDrizzle } from 'react-icons/ci';
+import { BsCloudSnowFill } from 'react-icons/bs';
 
 export type WeatherCardProps = {
   className?: string;
@@ -33,27 +45,63 @@ const IconMap: Record<
     day: IconType;
   }
 > = {
-  // Thunderstorm,
-  // Drizzle,
-  Rain: {
-    night: FaCloudMoon,
-    day: FaCloudSun,
+  Thunderstorm: {
+    night: MdThunderstorm,
+    day: MdThunderstorm,
   },
-  // Snow,
-  // Mist,
-  // Smoke,
-  // Haze,
-  // Dust,
-  // Fog,
-  // Sand,
-  // Ash,
-  // Squall,
-  // Tornado,
+  Drizzle: {
+    night: CiCloudDrizzle,
+    day: CiCloudDrizzle,
+  },
+  Snow: {
+    night: BsCloudSnowFill,
+    day: BsCloudSnowFill,
+  },
+  Mist: {
+    night: RiMistFill,
+    day: RiMistFill,
+  },
+  Smoke: {
+    night: WiSmoke,
+    day: WiSmoke,
+  },
+  Haze: {
+    night: RiMoonFoggyFill,
+    day: RiSunFoggyFill,
+  },
+  Dust: {
+    night: WiDust,
+    day: WiDust,
+  },
+  Fog: {
+    night: RiMoonFoggyFill,
+    day: RiSunFoggyFill,
+  },
+  Sand: {
+    night: WiSandstorm,
+    day: WiSandstorm,
+  },
+  Ash: {
+    night: FaVolcano,
+    day: FaVolcano,
+  },
+  Squall: {
+    night: IoThunderstorm,
+    day: IoThunderstorm,
+  },
+  Tornado: {
+    night: FaTornado,
+    day: FaTornado,
+  },
   Clear: {
     night: FaMoon,
     day: FaSun,
   },
   Clouds: {
+    night: FaCloudMoon,
+    day: FaCloudSun,
+  },
+  Rain: {
     night: FaCloudMoonRain,
     day: FaCloudSunRain,
   },
@@ -66,7 +114,6 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
     }
 
     const weatherType = weather.weather[0].main;
-    console.log(weatherType);
 
     if (typeof IconMap[weatherType] === 'undefined') {
       return null;
@@ -122,7 +169,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
           {weather.main.humidity}%
         </Text>
         <div className="flex gap-2 items-center">
-          <FaMountainSun
+          <RiDashboard3Line
             className="w-4 h-4 text-black dark:text-gray-100"
             title="Atmospheric Pressure"
           />
