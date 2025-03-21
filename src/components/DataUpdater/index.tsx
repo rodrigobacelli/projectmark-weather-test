@@ -20,7 +20,7 @@ export const DataUpdater = ({
   isUpdating,
 }: DataUpdaterProps) => {
   return (
-    <div className="w-full flex gap-2 justify-end items-center">
+    <div className="w-full flex flex-col-reverse md:flex-row gap-2 justify-end items-end md:items-center">
       {lastUpdated && !isUpdating ? (
         <Text className={twMerge('text-xs', className)}>
           Updated at{' '}
