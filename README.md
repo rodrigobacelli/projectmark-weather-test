@@ -103,6 +103,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Roadmap
 
+- Add Tests and Test Coverage
 - Deploy the Application to GitHub Pages
 - Create pages to detail each city weather, including forecast and more specific data
 - Add End-to-End tests
