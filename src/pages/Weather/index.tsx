@@ -2,16 +2,18 @@ import { useGetCitiesWeather } from '../../hooks/services/useGetCitiesWeather';
 import { Container } from '../../components/Container';
 import { WeatherCard } from '../../components/WeatherCard';
 import { DataUpdater } from '../../components/DataUpdater';
+import { Loader } from '../../components/Loader';
+import { NoResults } from '../../components/NoResults';
 
 export const Weather = () => {
   const queries = useGetCitiesWeather();
 
   if (queries.isLoading) {
-    return <div>Loading...</div>;
+    return <Loader size={100} />;
   }
 
   if (!Array.isArray(queries.data) || queries.data.length === 0) {
-    return <div>No content</div>;
+    return <NoResults />;
   }
 
   return (
