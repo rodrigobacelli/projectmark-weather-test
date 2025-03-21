@@ -22,9 +22,7 @@ export const Button = ({
         'text-gray-900 dark:text-gray-300 border-gray-900 dark:border-gray-300',
         'enabled:hover:bg-gray-900/20 enabled:dark:hover:bg-gray-100/20',
         'enabled:dark:focus:bg-gray-800/10 enabled:dark:focus:bg-gray-200/10',
-        'dark:disabled:text-gray-500 dark:disabled:border-gray-500',
-        // '  disabled:dark:text-gray-900/50 disabled:border-gray-900/50',
-        ' dark:border-gray-100 dark:disabled:border-gray-100/50',
+        'disabled:text-gray-500 disabled:border-gray-500',
         className
       )}
     >
