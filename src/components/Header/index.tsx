@@ -1,7 +1,8 @@
 import { twMerge } from 'tailwind-merge';
-import { Container } from '../Container';
 
+import { Container } from '../Container';
 import { Logo } from '../Logo';
+import { ThemeDropdown } from '../ThemeDropdown';
 
 export type HeaderProps = {
   className?: string;
@@ -17,7 +18,7 @@ export const Header = ({ className }: HeaderProps) => {
     >
       <Container className="container py-4 flex items-center justify-between">
         <Logo size="large" />
-        <div>Theme Chooser</div>
+        <ThemeDropdown />
       </Container>
     </header>
   );
