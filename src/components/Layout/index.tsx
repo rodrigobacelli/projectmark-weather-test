@@ -21,7 +21,9 @@ export const Layout = ({ children, className }: LayoutProps) => {
       )}
     >
       <Header />
-      <div className="w-full flex flex-col items-center flex-1">{children}</div>
+      <div className="w-full flex flex-col items-center flex-1 pt-16 pb-10">
+        {children}
+      </div>
       <Footer />
     </div>
   );

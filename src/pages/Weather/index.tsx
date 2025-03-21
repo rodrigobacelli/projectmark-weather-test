@@ -16,9 +16,6 @@ export const Weather = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <br />
-      <br />
-      <br />
       <Container as="section" className="flex flex-col gap-4">
         <DataUpdater
           lastUpdated={new Date(queries.dataUpdatedAt)}
