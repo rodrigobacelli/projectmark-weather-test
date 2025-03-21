@@ -153,7 +153,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
             weather.main.temp > 5 &&
               weather.main.temp <= 25 &&
               'text-orange-900 dark:text-orange-600',
-            weather.main.temp > 25 && 'text-red-900 dark:text-red-500'
+            weather.main.temp > 25 && 'text-red-700 dark:text-red-500'
           )}
         >
           {Math.round(weather.main.temp)}
@@ -170,7 +170,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
         </Text>
         <div className="flex gap-2 items-center">
           <RiDashboard3Line
-            className="w-4 h-4 text-black dark:text-gray-100"
+            className="w-4 h-4 text-gray-900 dark:text-gray-100"
             title="Atmospheric Pressure"
           />
           <Text>

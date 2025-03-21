@@ -3,6 +3,7 @@ import * as React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { Header } from '../Header';
 import { useTheme } from '../../providers/ThemeProvider';
+import { Footer } from '../Footer';
 
 export type LayoutProps = {
   children?: React.ReactNode | React.ReactNode[];
@@ -20,8 +21,8 @@ export const Layout = ({ children, className }: LayoutProps) => {
       )}
     >
       <Header />
-      {children}
-      <footer>Footer</footer>
+      <div className="w-full flex flex-col items-center flex-1">{children}</div>
+      <Footer />
     </div>
   );
 };

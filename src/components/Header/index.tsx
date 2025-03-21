@@ -1,8 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import { Container } from '../Container';
 
-import Logo from '../../assets/logo.svg?react';
-import { Text } from '../Text';
+import { Logo } from '../Logo';
 
 export type HeaderProps = {
   className?: string;
@@ -17,13 +16,8 @@ export const Header = ({ className }: HeaderProps) => {
       )}
     >
       <Container className="container py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Logo className="w-16 h-16" />
-          <Text as="b" className="text-2xl">
-            Weather App
-          </Text>
-        </div>
-        <div>Theme toggler</div>
+        <Logo size="large" />
+        <div>Theme Chooser</div>
       </Container>
     </header>
   );

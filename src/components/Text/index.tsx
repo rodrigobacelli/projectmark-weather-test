@@ -14,7 +14,9 @@ export const Text = ({
   as: Component = 'p',
 }: TextProps) => {
   return (
-    <Component className={twMerge('text-black dark:text-gray-100', className)}>
+    <Component
+      className={twMerge('text-gray-900 dark:text-gray-100', className)}
+    >
       {children}
     </Component>
   );

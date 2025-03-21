@@ -25,6 +25,19 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   );
 
   const handleThemeChange = (theme?: Themes) => {
+    localStorage.theme = theme;
+
+    if (theme === 'dark') {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+    } else if (theme === 'light') {
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.remove('dark');
+    }
+
     setTheme(theme);
   };
 
