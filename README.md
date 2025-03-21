@@ -1,6 +1,6 @@
 # Weather App
 
-![Weather App Print Screen](https://github.com/rodrigobacelli/[projectmark-weather-test]/blob/[main]/image.jpg?raw=true)
+![Weather App Print Screen](https://github.com/rodrigobacelli/projectmark-weather-test/blob/main/public/app-print.png?raw=true)
 
 This is a Weather Application for the ProjectMark Front-End Test, that show the Weather for Joinville, San Francisco and Urubici
 
