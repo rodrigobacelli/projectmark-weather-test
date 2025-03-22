@@ -28,7 +28,7 @@ export const Weather = () => {
           {queries.data
             .filter((item) => !!item)
             .map((item) => (
-              <WeatherCard weather={item} />
+              <WeatherCard weather={item} key={item.id} />
             ))}
         </div>
       </Container>

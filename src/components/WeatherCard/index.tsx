@@ -139,6 +139,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
   return (
     <Card
       as="article"
+      data-testid="weather-card"
       className={twMerge('w-full flex flex-col gap-4', className)}
     >
       <Text className="flex items-center gap-1 text-sm">

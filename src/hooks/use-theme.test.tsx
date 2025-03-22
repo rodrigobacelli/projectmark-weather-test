@@ -1,7 +1,5 @@
-import '../tests/matchMedia.mock.ts';
-
 import { describe, it, expect } from 'vitest';
-import { act, renderHook } from '@testing-library/react';
+import { act, renderHook } from '../tests/test-utils';
 import { useTheme } from './useTheme.tsx';
 import { ThemeProvider } from '../providers/ThemeProvider';
 

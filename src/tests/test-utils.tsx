@@ -1,11 +1,18 @@
-import '../tests/matchMedia.mock';
+import './mocks/matchMedia';
 
 import * as React from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import { ThemeProvider } from '../providers/ThemeProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // ✅ turns retries off
+      retry: false,
+    },
+  },
+});
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
   return (

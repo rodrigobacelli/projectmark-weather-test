@@ -1,7 +1,5 @@
-import '../tests/matchMedia.mock';
-
 import { describe, it, expect } from 'vitest';
-import { render } from '@testing-library/react';
+import { render } from '../tests/test-utils';
 import { Providers } from './';
 
 describe('providers/Providers', () => {
