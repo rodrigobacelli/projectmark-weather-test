@@ -25,7 +25,7 @@ import { Text } from '../Text';
 import { Card } from '../Card';
 
 import type { IconType } from 'react-icons';
-import type { Weather } from '../../types/weather.ts';
+import { Weather, WeatherMainConditions } from '../../types/weather.ts';
 import { twMerge } from 'tailwind-merge';
 import { WiDust, WiSandstorm, WiSmoke } from 'react-icons/wi';
 import { IoThunderstorm } from 'react-icons/io5';
@@ -39,7 +39,7 @@ export type WeatherCardProps = {
 };
 
 const IconMap: Record<
-  any,
+  WeatherMainConditions,
   {
     night: IconType;
     day: IconType;

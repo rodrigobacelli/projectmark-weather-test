@@ -1,6 +1,23 @@
+export type WeatherMainConditions =
+  | 'Thunderstorm'
+  | 'Drizzle'
+  | 'Snow'
+  | 'Mist'
+  | 'Smoke'
+  | 'Haze'
+  | 'Dust'
+  | 'Fog'
+  | 'Sand'
+  | 'Ash'
+  | 'Squall'
+  | 'Tornado'
+  | 'Clear'
+  | 'Clouds'
+  | 'Rain';
+
 export type WeatherStatus = {
   id: number;
-  main: string;
+  main: WeatherMainConditions;
   description: string;
   icon: string;
 };
