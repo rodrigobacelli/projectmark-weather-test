@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1742663380116" clover="3.2.0">
-  <project timestamp="1742663380116" name="All files">
-    <metrics statements="670" coveredstatements="603" conditionals="83" coveredconditionals="74" methods="34" coveredmethods="29" elements="787" coveredelements="706" complexity="0" loc="670" ncloc="670" packages="24" files="26" classes="26"/>
+<coverage generated="1742668352518" clover="3.2.0">
+  <project timestamp="1742668352518" name="All files">
+    <metrics statements="678" coveredstatements="633" conditionals="94" coveredconditionals="83" methods="33" coveredmethods="31" elements="805" coveredelements="747" complexity="0" loc="678" ncloc="678" packages="26" files="28" classes="28"/>
     <package name="src">
       <metrics statements="20" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
       <file name="App.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/App.tsx">
@@ -67,21 +67,21 @@
         <metrics statements="17" coveredstatements="17" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="12" count="13" type="stmt"/>
-        <line num="13" count="13" type="stmt"/>
-        <line num="14" count="13" type="stmt"/>
-        <line num="15" count="13" type="stmt"/>
-        <line num="16" count="13" type="stmt"/>
-        <line num="17" count="13" type="stmt"/>
-        <line num="18" count="13" type="stmt"/>
-        <line num="19" count="13" type="stmt"/>
-        <line num="20" count="13" type="stmt"/>
-        <line num="21" count="13" type="stmt"/>
-        <line num="22" count="13" type="stmt"/>
-        <line num="24" count="13" type="stmt"/>
-        <line num="25" count="13" type="stmt"/>
-        <line num="27" count="13" type="stmt"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="19" count="14" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="22" count="14" type="stmt"/>
+        <line num="24" count="14" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="27" count="14" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Container">
@@ -155,71 +155,71 @@
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="24" count="15" type="stmt"/>
-        <line num="25" count="15" type="stmt"/>
-        <line num="26" count="15" type="stmt"/>
-        <line num="27" count="15" type="stmt"/>
-        <line num="28" count="15" type="stmt"/>
-        <line num="29" count="15" type="stmt"/>
-        <line num="30" count="15" type="stmt"/>
-        <line num="32" count="15" type="stmt"/>
-        <line num="33" count="15" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="15" type="stmt"/>
-        <line num="35" count="15" type="stmt"/>
-        <line num="37" count="15" type="stmt"/>
-        <line num="38" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="15" type="stmt"/>
-        <line num="43" count="15" type="stmt"/>
-        <line num="45" count="15" type="stmt"/>
-        <line num="46" count="15" type="stmt"/>
-        <line num="47" count="15" type="stmt"/>
-        <line num="48" count="15" type="stmt"/>
-        <line num="49" count="15" type="cond" truecount="2" falsecount="0"/>
-        <line num="50" count="15" type="stmt"/>
-        <line num="51" count="15" type="stmt"/>
-        <line num="52" count="15" type="stmt"/>
-        <line num="53" count="15" type="stmt"/>
-        <line num="54" count="15" type="stmt"/>
-        <line num="55" count="15" type="stmt"/>
-        <line num="57" count="15" type="stmt"/>
-        <line num="58" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="59" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="20" type="stmt"/>
+        <line num="25" count="20" type="stmt"/>
+        <line num="26" count="20" type="stmt"/>
+        <line num="27" count="20" type="stmt"/>
+        <line num="28" count="20" type="stmt"/>
+        <line num="29" count="20" type="stmt"/>
+        <line num="30" count="20" type="stmt"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="33" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="20" type="stmt"/>
+        <line num="35" count="20" type="stmt"/>
+        <line num="37" count="20" type="stmt"/>
+        <line num="38" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="20" type="stmt"/>
+        <line num="43" count="20" type="stmt"/>
+        <line num="45" count="20" type="stmt"/>
+        <line num="46" count="20" type="stmt"/>
+        <line num="47" count="20" type="stmt"/>
+        <line num="48" count="20" type="stmt"/>
+        <line num="49" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="20" type="stmt"/>
+        <line num="51" count="20" type="stmt"/>
+        <line num="52" count="20" type="stmt"/>
+        <line num="53" count="20" type="stmt"/>
+        <line num="54" count="20" type="stmt"/>
+        <line num="55" count="20" type="stmt"/>
+        <line num="57" count="20" type="stmt"/>
+        <line num="58" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="15" type="cond" truecount="1" falsecount="0"/>
         <line num="60" count="5" type="stmt"/>
-        <line num="61" count="15" type="stmt"/>
-        <line num="62" count="15" type="stmt"/>
-        <line num="63" count="15" type="stmt"/>
-        <line num="64" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="65" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="67" count="13" type="stmt"/>
-        <line num="69" count="15" type="stmt"/>
-        <line num="70" count="15" type="stmt"/>
-        <line num="71" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="72" count="2" type="stmt"/>
-        <line num="73" count="2" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
-        <line num="75" count="2" type="stmt"/>
-        <line num="76" count="2" type="stmt"/>
-        <line num="77" count="2" type="stmt"/>
-        <line num="79" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="80" count="7" type="stmt"/>
-        <line num="81" count="7" type="stmt"/>
-        <line num="82" count="7" type="stmt"/>
-        <line num="83" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="85" count="7" type="stmt"/>
-        <line num="86" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="87" count="7" type="stmt"/>
-        <line num="88" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="89" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="90" count="5" type="stmt"/>
-        <line num="91" count="7" type="stmt"/>
-        <line num="92" count="7" type="stmt"/>
-        <line num="93" count="2" type="stmt"/>
-        <line num="94" count="2" type="stmt"/>
-        <line num="96" count="15" type="stmt"/>
-        <line num="98" count="15" type="stmt"/>
+        <line num="61" count="20" type="stmt"/>
+        <line num="62" count="20" type="stmt"/>
+        <line num="63" count="20" type="stmt"/>
+        <line num="64" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="67" count="17" type="stmt"/>
+        <line num="69" count="20" type="stmt"/>
+        <line num="70" count="20" type="stmt"/>
+        <line num="71" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
+        <line num="75" count="3" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+        <line num="79" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="80" count="10" type="stmt"/>
+        <line num="81" count="10" type="stmt"/>
+        <line num="82" count="10" type="stmt"/>
+        <line num="83" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="85" count="10" type="stmt"/>
+        <line num="86" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="87" count="10" type="stmt"/>
+        <line num="88" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="89" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="90" count="7" type="stmt"/>
+        <line num="91" count="10" type="stmt"/>
+        <line num="92" count="10" type="stmt"/>
+        <line num="93" count="3" type="stmt"/>
+        <line num="94" count="3" type="stmt"/>
+        <line num="96" count="20" type="stmt"/>
+        <line num="98" count="20" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Footer">
@@ -374,59 +374,59 @@
         <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="92" type="stmt"/>
-        <line num="13" count="92" type="stmt"/>
-        <line num="14" count="92" type="stmt"/>
-        <line num="15" count="92" type="stmt"/>
-        <line num="16" count="92" type="stmt"/>
-        <line num="17" count="92" type="stmt"/>
-        <line num="18" count="92" type="stmt"/>
-        <line num="19" count="92" type="stmt"/>
-        <line num="20" count="92" type="stmt"/>
-        <line num="22" count="92" type="stmt"/>
-        <line num="23" count="92" type="stmt"/>
-        <line num="25" count="92" type="stmt"/>
+        <line num="12" count="100" type="stmt"/>
+        <line num="13" count="100" type="stmt"/>
+        <line num="14" count="100" type="stmt"/>
+        <line num="15" count="100" type="stmt"/>
+        <line num="16" count="100" type="stmt"/>
+        <line num="17" count="100" type="stmt"/>
+        <line num="18" count="100" type="stmt"/>
+        <line num="19" count="100" type="stmt"/>
+        <line num="20" count="100" type="stmt"/>
+        <line num="22" count="100" type="stmt"/>
+        <line num="23" count="100" type="stmt"/>
+        <line num="25" count="100" type="stmt"/>
       </file>
     </package>
     <package name="src.components.ThemeDropdown">
-      <metrics statements="35" coveredstatements="30" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <metrics statements="35" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/components/ThemeDropdown/index.tsx">
-        <metrics statements="35" coveredstatements="30" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <metrics statements="35" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
-        <line num="16" count="8" type="stmt"/>
-        <line num="17" count="8" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="stmt"/>
-        <line num="26" count="8" type="stmt"/>
-        <line num="27" count="8" type="stmt"/>
-        <line num="28" count="8" type="stmt"/>
-        <line num="29" count="8" type="stmt"/>
-        <line num="30" count="8" type="stmt"/>
-        <line num="31" count="8" type="stmt"/>
-        <line num="32" count="8" type="stmt"/>
-        <line num="33" count="8" type="stmt"/>
-        <line num="34" count="8" type="stmt"/>
-        <line num="35" count="8" type="stmt"/>
-        <line num="36" count="8" type="stmt"/>
-        <line num="37" count="8" type="stmt"/>
-        <line num="38" count="8" type="stmt"/>
-        <line num="39" count="8" type="stmt"/>
-        <line num="40" count="8" type="stmt"/>
-        <line num="41" count="8" type="stmt"/>
-        <line num="42" count="8" type="stmt"/>
-        <line num="44" count="8" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="12" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.components.WeatherCard">
@@ -598,6 +598,34 @@
         <line num="23" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.contexts">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ThemeContext.ts" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/contexts/ThemeContext.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="12" coveredstatements="12" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="useTheme.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/hooks/useTheme.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="24" type="stmt"/>
+        <line num="7" count="24" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="22" type="stmt"/>
+        <line num="12" count="22" type="stmt"/>
+        <line num="13" count="22" type="stmt"/>
+        <line num="14" count="22" type="stmt"/>
+        <line num="15" count="22" type="stmt"/>
+      </file>
+    </package>
     <package name="src.hooks.services">
       <metrics statements="33" coveredstatements="28" conditionals="9" coveredconditionals="8" methods="4" coveredmethods="3"/>
       <file name="useGetCitiesWeather.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/hooks/services/useGetCitiesWeather.tsx">
@@ -705,53 +733,44 @@
       </file>
     </package>
     <package name="src.providers.ThemeProvider">
-      <metrics statements="44" coveredstatements="24" conditionals="3" coveredconditionals="2" methods="4" coveredmethods="2"/>
+      <metrics statements="35" coveredstatements="33" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <file name="index.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/providers/ThemeProvider/index.tsx">
-        <metrics statements="44" coveredstatements="24" conditionals="3" coveredconditionals="2" methods="4" coveredmethods="2"/>
+        <metrics statements="35" coveredstatements="33" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="cond" truecount="0" falsecount="1"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="58" type="stmt"/>
+        <line num="11" count="58" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="53" type="stmt"/>
+        <line num="13" count="53" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="53" type="stmt"/>
+        <line num="16" count="58" type="stmt"/>
+        <line num="18" count="58" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
-        <line num="57" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="58" count="14" type="stmt"/>
-        <line num="60" count="14" type="stmt"/>
-        <line num="61" count="14" type="stmt"/>
-        <line num="62" count="14" type="stmt"/>
-        <line num="63" count="14" type="stmt"/>
-        <line num="64" count="14" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="41" count="58" type="stmt"/>
+        <line num="42" count="58" type="stmt"/>
+        <line num="43" count="58" type="stmt"/>
+        <line num="44" count="58" type="stmt"/>
+        <line num="46" count="58" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
@@ -779,41 +798,42 @@
       </file>
     </package>
     <package name="src.tests">
-      <metrics statements="29" coveredstatements="29" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="30" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="matchMedia.mock.ts" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/tests/matchMedia.mock.ts">
         <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="6" count="54" type="stmt"/>
+        <line num="7" count="54" type="stmt"/>
+        <line num="8" count="54" type="stmt"/>
+        <line num="9" count="54" type="stmt"/>
+        <line num="10" count="54" type="stmt"/>
+        <line num="11" count="54" type="stmt"/>
+        <line num="12" count="54" type="stmt"/>
+        <line num="13" count="54" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
       </file>
       <file name="test-utils.tsx" path="/Users/rodrigopb/Dev/projectmark-weather-test/src/tests/test-utils.tsx">
-        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="51" type="stmt"/>
+        <line num="12" count="51" type="stmt"/>
+        <line num="13" count="51" type="stmt"/>
+        <line num="14" count="51" type="stmt"/>
+        <line num="16" count="51" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="51" type="stmt"/>
+        <line num="20" count="51" type="stmt"/>
+        <line num="21" count="51" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.types">

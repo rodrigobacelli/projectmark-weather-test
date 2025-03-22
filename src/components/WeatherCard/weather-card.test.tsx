@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { render } from '@testing-library/react';
+import { render } from '../../tests/test-utils';
 
 import { Weather } from '../../types/weather';
 import { WeatherCard } from './';

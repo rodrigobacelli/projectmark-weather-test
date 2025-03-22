@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render } from '@testing-library/react';
+import { render } from '../../tests/test-utils';
 import { Dropdown } from './';
 
 const mockedOptions = [
@@ -33,7 +33,7 @@ describe('components/Dropdown', () => {
     const result = render(
       <Dropdown
         id="dropdown"
-        className="card-className"
+        className="dropdown-className"
         options={mockedOptions}
         selectedOption="option1"
         onSelect={onSelect}
@@ -51,7 +51,7 @@ describe('components/Dropdown', () => {
     const result = render(
       <Dropdown
         id="dropdown"
-        className="card-className"
+        className="dropdown-className"
         options={mockedOptionsWithIcon}
         selectedOption="option4"
       />
@@ -72,14 +72,14 @@ describe('components/Dropdown', () => {
     const result = render(
       <Dropdown
         id="dropdown"
-        className="card-className"
+        className="dropdown-className"
         options={mockedOptions}
         selectedOption="option1"
       />
     );
 
     expect(
-      result.container.querySelector('.card-className')
+      result.container.querySelector('.dropdown-className')
     ).toBeInTheDocument();
   });
 
@@ -87,7 +87,7 @@ describe('components/Dropdown', () => {
     const result = render(
       <Dropdown
         id="dropdown"
-        className="card-className"
+        className="dropdown-className"
         options={[
           ...mockedOptions,
           {

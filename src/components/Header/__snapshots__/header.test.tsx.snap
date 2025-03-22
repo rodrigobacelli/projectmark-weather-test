@@ -59,7 +59,7 @@ exports[`components/Header > should render the Header Component 1`] = `
             <div
               aria-controls="theme-dropdown-listbox"
               aria-expanded="false"
-              aria-haspopup="theme-dropdown-listbox"
+              aria-haspopup="listbox"
               class="hover:cursor-pointer rounded-full px-4 py-2 border border-gray-800 dark:border-gray-200 hover:bg-gray-800/20 hover:dark:bg-gray-200/20"
               id="theme-dropdown"
               role="combobox"
@@ -163,7 +163,7 @@ exports[`components/Header > should render the Header Component 1`] = `
           <div
             aria-controls="theme-dropdown-listbox"
             aria-expanded="false"
-            aria-haspopup="theme-dropdown-listbox"
+            aria-haspopup="listbox"
             class="hover:cursor-pointer rounded-full px-4 py-2 border border-gray-800 dark:border-gray-200 hover:bg-gray-800/20 hover:dark:bg-gray-200/20"
             id="theme-dropdown"
             role="combobox"

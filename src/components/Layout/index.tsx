@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { twMerge } from 'tailwind-merge';
 import { Header } from '../Header';
-import { useTheme } from '../../providers/ThemeProvider';
+import { useTheme } from '../../hooks/useTheme';
 import { Footer } from '../Footer';
 
 export type LayoutProps = {
