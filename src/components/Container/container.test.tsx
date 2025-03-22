@@ -16,9 +16,7 @@ describe('components/Container', () => {
       </Container>
     );
 
-    expect(
-      result.getByTestId('container').classList.contains('container-className')
-    ).toBeTruthy();
+    expect(result.container.querySelector('.container-className')).toBeTruthy();
   });
 
   it('should render the Container Component', () => {

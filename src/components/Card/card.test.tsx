@@ -10,15 +10,9 @@ describe('components/Card', () => {
   });
 
   it('should accept classNames', () => {
-    const result = render(
-      <Card data-testid="card" className="card-className">
-        Card Content
-      </Card>
-    );
+    const result = render(<Card className="card-className">Card Content</Card>);
 
-    expect(
-      result.getByTestId('card').classList.contains('card-className')
-    ).toBeTruthy();
+    expect(result.container.querySelector('.card-className')).toBeTruthy();
   });
 
   it('should render the Card Component', () => {
