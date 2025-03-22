@@ -54,7 +54,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
               class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
               data-testid="weather-card"
             >
-              <p
+              <h2
                 class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
               >
                 <svg
@@ -75,7 +75,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                   />
                 </svg>
                 San Francisco, US
-              </p>
+              </h2>
               <article
                 class="flex items-center justify-between gap-1"
               >
@@ -186,7 +186,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
               class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
               data-testid="weather-card"
             >
-              <p
+              <h2
                 class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
               >
                 <svg
@@ -207,7 +207,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                   />
                 </svg>
                 San Francisco, US
-              </p>
+              </h2>
               <article
                 class="flex items-center justify-between gap-1"
               >
@@ -318,7 +318,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
               class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
               data-testid="weather-card"
             >
-              <p
+              <h2
                 class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
               >
                 <svg
@@ -339,7 +339,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                   />
                 </svg>
                 San Francisco, US
-              </p>
+              </h2>
               <article
                 class="flex items-center justify-between gap-1"
               >
@@ -501,7 +501,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
             class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
             data-testid="weather-card"
           >
-            <p
+            <h2
               class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
             >
               <svg
@@ -522,7 +522,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                 />
               </svg>
               San Francisco, US
-            </p>
+            </h2>
             <article
               class="flex items-center justify-between gap-1"
             >
@@ -633,7 +633,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
             class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
             data-testid="weather-card"
           >
-            <p
+            <h2
               class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
             >
               <svg
@@ -654,7 +654,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                 />
               </svg>
               San Francisco, US
-            </p>
+            </h2>
             <article
               class="flex items-center justify-between gap-1"
             >
@@ -765,7 +765,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
             class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg ring shadow-xl ring-gray-900/5 w-full flex flex-col gap-4"
             data-testid="weather-card"
           >
-            <p
+            <h2
               class="text-gray-900 dark:text-gray-100 flex items-center gap-1 text-sm"
             >
               <svg
@@ -786,7 +786,7 @@ exports[`pages/Weather > should render the Weather Page 1`] = `
                 />
               </svg>
               San Francisco, US
-            </p>
+            </h2>
             <article
               class="flex items-center justify-between gap-1"
             >
