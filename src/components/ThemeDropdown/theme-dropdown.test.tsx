@@ -1,8 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render } from '../../tests/test-utils.tsx';
 import { ThemeDropdown } from './';
-import { act, renderHook, within } from '@testing-library/react';
-import { useTheme } from '../../hooks/useTheme';
 
 describe('components/ThemeDropdown', () => {
   it('should handle selecting a theme', async () => {
