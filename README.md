@@ -20,6 +20,12 @@ In order to run this project you need to make sure you have Node 22+ and NPM 9+ 
 
 [Get Latest Node Version](https://nodejs.org/en/download)
 
+You also need an AppId from OpenWeather. Register to the website, access `API Keys` section on the site and create one.
+The time to activate the key can take up to two hours, in the meantime, you could receive 401 errors.
+
+[Regiter to OpenWeather](https://home.openweathermap.org/users/sign_up)
+
+[OpenWeather AppId reference](https://openweathermap.org/appid)
 
 ## Environment Variables
 
@@ -89,7 +95,17 @@ Builds the app for production to the build folder.
 ```bash
   npm run lint
 ```
-Runs lint to check if the code is following the code styling rules 
+Runs lint to check if the code is following the code styling rules.
+
+```bash
+  npm run test
+```
+Runs the test suit and execute the unit tests.
+
+```bash
+  npm run coverage
+```
+Runs the test suit and execute the unit tests, collecting code coverage in the process.
 
 ## Need Help?
 
