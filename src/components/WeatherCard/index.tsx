@@ -142,7 +142,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
       data-testid="weather-card"
       className={twMerge('w-full flex flex-col gap-4', className)}
     >
-      <Text className="flex items-center gap-1 text-sm">
+      <Text as="h2" className="flex items-center gap-1 text-sm">
         <FaLocationDot className="w-3 h-3" title="Location" />
         {`${weather.name}, ${weather.sys.country}`}
       </Text>
