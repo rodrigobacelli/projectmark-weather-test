@@ -20,12 +20,17 @@ export const DataUpdater = ({
   isUpdating,
 }: DataUpdaterProps) => {
   return (
-    <div className="w-full flex flex-col-reverse md:flex-row gap-2 justify-end items-end md:items-center">
+    <div
+      className={twMerge(
+        'w-full flex flex-col-reverse md:flex-row gap-2 justify-end items-end md:items-center',
+        className
+      )}
+    >
       {lastUpdated && !isUpdating ? (
-        <Text className={twMerge('text-xs', className)}>
+        <Text className="text-xs">
           Updated at{' '}
           <time dateTime={format(lastUpdated, 'yyyy-MM-dd HH:mm:ss')}>
-            {format(new Date(lastUpdated), 'MM/dd/yyyy HH:mm:ss')}
+            {format(lastUpdated, 'MM/dd/yyyy HH:mm:ss')}
           </time>
         </Text>
       ) : null}

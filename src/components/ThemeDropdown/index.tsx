@@ -12,6 +12,7 @@ export const ThemeDropdown = ({ className }: ThemeDropdownProps) => {
 
   return (
     <Dropdown
+      id="theme-dropdown"
       className={className}
       onSelect={(nextOption) =>
         onThemeChange?.(
