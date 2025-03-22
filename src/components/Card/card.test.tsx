@@ -12,7 +12,9 @@ describe('components/Card', () => {
   it('should accept classNames', () => {
     const result = render(<Card className="card-className">Card Content</Card>);
 
-    expect(result.container.querySelector('.card-className')).toBeTruthy();
+    expect(
+      result.container.querySelector('.card-className')
+    ).toBeInTheDocument();
   });
 
   it('should render the Card Component', () => {

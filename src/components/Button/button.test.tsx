@@ -28,7 +28,9 @@ describe('components/Button', () => {
   it('should accept classNames', () => {
     const result = render(<Button className="button-className">Label</Button>);
 
-    expect(result.container.querySelector('.button-className')).toBeTruthy();
+    expect(
+      result.container.querySelector('.button-className')
+    ).toBeInTheDocument();
   });
 
   it('should handle Button click', async () => {
