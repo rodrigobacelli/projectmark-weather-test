@@ -6,7 +6,7 @@ export type WeatherStatus = {
 };
 
 export type Weather = {
-  id: 3459712;
+  id: number;
   coord: {
     lon: number;
     lat: number;
@@ -27,6 +27,7 @@ export type Weather = {
   wind: {
     speed: number;
     deg: number;
+    gust: number;
   };
   clouds: {
     all: number;

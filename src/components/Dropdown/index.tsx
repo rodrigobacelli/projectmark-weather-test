@@ -13,6 +13,7 @@ export type DropdownOption = {
 };
 
 export type DropdownProps = {
+  id: string;
   className?: string;
   onSelect?: (nextOption: string) => void;
   options: DropdownOption[];
@@ -20,6 +21,7 @@ export type DropdownProps = {
 };
 
 export const Dropdown = ({
+  id,
   className,
   options,
   onSelect,
@@ -45,6 +47,12 @@ export const Dropdown = ({
       <div
         className="hover:cursor-pointer rounded-full px-4 py-2 border border-gray-800 dark:border-gray-200 hover:bg-gray-800/20 hover:dark:bg-gray-200/20"
         onClick={() => setIsOpen((prevState) => !prevState)}
+        aria-controls={`${id}-listbox`}
+        aria-expanded={isOpen}
+        aria-haspopup="listbox"
+        id={id}
+        role="combobox"
+        tabIndex={0}
       >
         <Text className="flex gap-2 items-center text-sm">
           {selectedOptionObject?.icon ? (
@@ -64,6 +72,9 @@ export const Dropdown = ({
         <Card
           as="ul"
           className="absolute top-12 right-0 z-1 p-0 overflow-hidden"
+          role="listbox"
+          id={`${id}-listbox`}
+          tabIndex={-1}
         >
           {options.map((option) => (
             <li

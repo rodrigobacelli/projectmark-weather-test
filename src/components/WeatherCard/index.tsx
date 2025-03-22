@@ -147,6 +147,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
       </Text>
       <article className="flex items-center justify-between gap-1">
         <Text
+          data-testid="weather-card-temperature"
           className={twMerge(
             'text-7xl flex justify-start gap-1',
             weather.main.temp <= 5 && 'text-blue-900 dark:text-blue-500',
@@ -164,7 +165,10 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
         </Text>
       </article>
       <footer className="flex flex gap-4 items-center justify-start">
-        <Text className="flex gap-2 items-center">
+        <Text
+          className="flex gap-2 items-center"
+          data-testid="weather-card-humidity"
+        >
           <FaDroplet className="w-4 h-4" title="Humidity" />
           {weather.main.humidity}%
         </Text>
@@ -173,7 +177,7 @@ export const WeatherCard = ({ weather, className }: WeatherCardProps) => {
             className="w-4 h-4 text-gray-900 dark:text-gray-100"
             title="Atmospheric Pressure"
           />
-          <Text>
+          <Text data-testid="weather-card-pressure">
             {weather.main.pressure} <abbr title="hectoPascals">hPa</abbr>
           </Text>
         </div>

@@ -5,6 +5,7 @@ import { CiCloudOff } from 'react-icons/ci';
 import { Text } from '../Text';
 
 export type NoResultsProps = {
+  id?: string;
   className?: string;
 };
 

@@ -1,16 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { useState } from 'react';
 
-export type Themes = 'dark' | 'light';
-
-type ToastContextType = {
-  theme?: Themes;
-  onThemeChange?: (nextTheme?: Themes) => void;
-};
-
-const ThemeContext = createContext<ToastContextType>({
-  theme: undefined,
-  onThemeChange: () => {},
-});
+import { ThemeContext, Themes } from '../../contexts/ThemeContext';
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -21,7 +11,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     localStorage.theme ||
       (!localStorage.theme &&
         window.matchMedia('(prefers-color-scheme: dark)').matches &&
-        'dark')
+        'dark') ||
+      undefined
   );
 
   const handleThemeChange = (theme?: Themes) => {
@@ -52,13 +43,4 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
       {children}
     </ThemeContext.Provider>
   );
-};
-
-export const useTheme = () => {
-  const { theme, onThemeChange } = useContext(ThemeContext);
-
-  return {
-    theme,
-    onThemeChange,
-  };
 };
