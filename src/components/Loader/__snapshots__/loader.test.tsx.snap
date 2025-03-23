@@ -7,6 +7,7 @@ exports[`components/NoResults > should render the NoResults Component 1`] = `
     <div>
       <div
         class="w-full h-full flex items-center justify-center loader-className"
+        data-testid="loader"
       >
         <svg
           class="animate-spin text-gray-700 dark:text-gray-400"
@@ -29,6 +30,7 @@ exports[`components/NoResults > should render the NoResults Component 1`] = `
   "container": <div>
     <div
       class="w-full h-full flex items-center justify-center loader-className"
+      data-testid="loader"
     >
       <svg
         class="animate-spin text-gray-700 dark:text-gray-400"

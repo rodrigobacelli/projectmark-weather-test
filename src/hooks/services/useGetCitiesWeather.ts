@@ -14,7 +14,7 @@ export const useGetCitiesWeather = () => {
     }),
     combine: (results) => {
       return {
-        data: results.map((result) => result.data),
+        data: results.map((result) => result.data).filter(Boolean),
         isFetching: results.some((result) => result.isFetching),
         isLoading: results.some((result) => result.isLoading),
         dataUpdatedAt: results.reduce(

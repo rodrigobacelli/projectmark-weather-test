@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest';
+
 import { act, renderHook } from '../tests/test-utils';
-import { useTheme } from './useTheme.tsx';
 import { ThemeProvider } from '../providers/ThemeProvider';
+
+import { useTheme } from './useTheme.tsx';
 
 const wrapper = ({ children }: { children?: React.ReactNode }) => (
   <ThemeProvider>{children}</ThemeProvider>

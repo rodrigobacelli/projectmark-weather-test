@@ -14,6 +14,7 @@ export const Loader = ({ className, size = 40 }: LoaderProps) => {
         'w-full h-full flex items-center justify-center',
         className
       )}
+      data-testid="loader"
     >
       <LoaderIcon
         className="animate-spin text-gray-700 dark:text-gray-400"

@@ -1,14 +1,16 @@
 import './mocks/matchMedia';
 
 import * as React from 'react';
+
+import { beforeEach } from 'vitest';
 import { render, RenderOptions } from '@testing-library/react';
-import { ThemeProvider } from '../providers/ThemeProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-const queryClient = new QueryClient({
+import { ThemeProvider } from '../providers/ThemeProvider';
+
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      // ✅ turns retries off
       retry: false,
     },
   },
@@ -26,6 +28,10 @@ const customRender = (
   ui: React.ReactElement,
   options?: Omit<RenderOptions, 'wrapper'>
 ) => render(ui, { wrapper: Providers, ...options });
+
+beforeEach(async () => {
+  queryClient.clear();
+});
 
 export * from '@testing-library/react';
 export { customRender as render };

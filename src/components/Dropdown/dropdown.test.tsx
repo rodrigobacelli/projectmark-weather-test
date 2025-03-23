@@ -1,5 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render } from '../../tests/test-utils';
+
+import { render, act } from '../../tests/test-utils.tsx';
+
 import { Dropdown } from './';
 
 const mockedOptions = [
@@ -22,7 +24,7 @@ const mockedOptionsWithIcon = [
   {
     label: 'Option 4',
     value: 'option4',
-    icon: () => <div data-testid="option4-icon">Icon</div>,
+    icon: () => <span data-testid="option4-icon">Icon</span>,
   },
 ];
 
@@ -40,8 +42,9 @@ describe('components/Dropdown', () => {
       />
     );
 
-    await result.getByRole('combobox').click();
-    await result.getByText('Option 3').click();
+    await act(async () => await result.getByRole('combobox').click());
+
+    await act(async () => await result.getByText('Option 3').click());
 
     expect(onSelect).toHaveBeenCalledTimes(1);
     expect(onSelect).toHaveBeenCalledWith('option3');
@@ -61,7 +64,7 @@ describe('components/Dropdown', () => {
       result.getByRole('combobox').querySelector('[data-testid="option4-icon"]')
     ).toBeInTheDocument();
 
-    await result.getByRole('combobox').click();
+    await act(async () => await result.getByRole('combobox').click());
 
     expect(
       result.getByRole('listbox').querySelector('[data-testid="option4-icon"]')

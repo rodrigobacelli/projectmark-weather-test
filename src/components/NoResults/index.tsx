@@ -16,6 +16,7 @@ export const NoResults = ({ className }: NoResultsProps) => {
         'w-full h-full flex items-center justify-center',
         className
       )}
+      id="no-content"
     >
       <Text className="flex flex-col gap-2 items-center">
         <CiCloudOff className="w-8 h-8" />

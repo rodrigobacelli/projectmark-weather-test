@@ -1,8 +1,10 @@
 import { describe, it, expect } from 'vitest';
+
 import { render } from '../../tests/test-utils';
 
-import { WeatherCard } from './';
 import { mockedWeather } from '../../tests/mocks/mockedWeather.ts';
+
+import { WeatherCard } from './';
 
 describe('components/WeatherCard', () => {
   it('should render the city name', () => {
