@@ -4,6 +4,7 @@ import { WeatherCard } from '../../components/WeatherCard';
 import { DataUpdater } from '../../components/DataUpdater';
 import { Loader } from '../../components/Loader';
 import { NoResults } from '../../components/NoResults';
+import { Text } from '../../components/Text';
 
 export const Weather = () => {
   const queries = useGetCitiesWeather();
@@ -23,6 +24,9 @@ export const Weather = () => {
       data-testid="weather-page"
     >
       <Container as="section" className="flex flex-col gap-4">
+        <Text as="h1" className="text-xl font-bold">
+          Weather now
+        </Text>
         <DataUpdater
           lastUpdated={new Date(queries.dataUpdatedAt)}
           onUpdate={queries.refetch}

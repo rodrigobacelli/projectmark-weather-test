@@ -1,7 +1,7 @@
 import { describe, it, expect, afterEach, afterAll, beforeEach } from 'vitest';
 import { http, HttpResponse } from 'msw';
 
-import { render, waitFor, act } from '../../tests/test-utils';
+import { render, waitFor } from '../../tests/test-utils';
 import { server } from '../../tests/msw';
 
 import '../../tests/mocks/date-fns.ts';
