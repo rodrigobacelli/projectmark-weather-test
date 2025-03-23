@@ -7,6 +7,7 @@ exports[`components/NoResults > should render the NoResults Component 1`] = `
     <div>
       <div
         class="w-full h-full flex items-center justify-center no-results-className"
+        id="no-content"
       >
         <p
           class="text-gray-900 dark:text-gray-100 flex flex-col gap-2 items-center"
@@ -42,6 +43,7 @@ exports[`components/NoResults > should render the NoResults Component 1`] = `
   "container": <div>
     <div
       class="w-full h-full flex items-center justify-center no-results-className"
+      id="no-content"
     >
       <p
         class="text-gray-900 dark:text-gray-100 flex flex-col gap-2 items-center"

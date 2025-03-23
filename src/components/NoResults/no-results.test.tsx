@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
+
 import { render } from '../../tests/test-utils';
+
 import { NoResults } from './';
 
 describe('components/NoResults', () => {

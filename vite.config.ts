@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), svgr()],
   test: {
@@ -12,6 +11,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/tests/setup.ts',
     dir: './src',
-    coverage: { provider: 'istanbul' },
+    exclude: ['dist/*'],
+    coverage: { provider: 'istanbul', exclude: ['src/tests/*', 'dist/*'] },
   },
 });

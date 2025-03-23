@@ -17,7 +17,11 @@ export const Weather = () => {
   }
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div
+      className="flex flex-col items-center w-full"
+      id="weather-page"
+      data-testid="weather-page"
+    >
       <Container as="section" className="flex flex-col gap-4">
         <DataUpdater
           lastUpdated={new Date(queries.dataUpdatedAt)}
