@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import * as React from 'react';
 
 export type Themes = 'dark' | 'light';
 
@@ -7,6 +7,6 @@ type ThemeContextType = {
   onThemeChange?: (nextTheme?: Themes) => void;
 };
 
-export const ThemeContext = createContext<ThemeContextType | undefined>(
+export const ThemeContext = React.createContext<ThemeContextType | undefined>(
   undefined
 );
