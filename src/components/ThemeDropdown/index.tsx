@@ -2,8 +2,7 @@ import { FaCircleHalfStroke, FaMoon, FaSun } from 'react-icons/fa6';
 
 import { useTheme } from '../../hooks/useTheme';
 import { Dropdown } from '../Dropdown';
-
-import type { Themes } from '../../providers/ThemeProvider';
+import type { Themes } from '../../contexts/ThemeContext';
 
 export type ThemeDropdownProps = {
   className?: string;
